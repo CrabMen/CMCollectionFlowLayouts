@@ -29,7 +29,7 @@
 
 }
 
-- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttribqutesForElementsInRect:(CGRect)rect {
+- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
 
     NSArray *attrs = [super layoutAttributesForElementsInRect:rect];
     
@@ -65,7 +65,6 @@
     CGRect visibleRect = CGRectZero;
     visibleRect.size = self.collectionView.bounds.size;
     visibleRect.origin = proposedContentOffset;
-    
     
     //获得所有的attribute数组
     NSArray *itemAttrs = [self layoutAttributesForElementsInRect:visibleRect];

@@ -21,6 +21,8 @@
 		23C99B2C1EE7DA250010872F /* CMWaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B231EE7DA250010872F /* CMWaterFallController.m */; };
 		23C99B2D1EE7DA250010872F /* CMWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B251EE7DA250010872F /* CMWaterFallLayout.m */; };
 		23C99B391EE7E0060010872F /* CMEmotionPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B381EE7E0060010872F /* CMEmotionPagesController.m */; };
+		23C99B3C1EE7E37D0010872F /* CMPhoto3DController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B3B1EE7E37D0010872F /* CMPhoto3DController.m */; };
+		23C99B3F1EE7F2A40010872F /* CMCircleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B3E1EE7F2A40010872F /* CMCircleFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,10 @@
 		23C99B251EE7DA250010872F /* CMWaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWaterFallLayout.m; sourceTree = "<group>"; };
 		23C99B371EE7E0060010872F /* CMEmotionPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMEmotionPagesController.h; sourceTree = "<group>"; };
 		23C99B381EE7E0060010872F /* CMEmotionPagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMEmotionPagesController.m; sourceTree = "<group>"; };
+		23C99B3A1EE7E37D0010872F /* CMPhoto3DController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPhoto3DController.h; sourceTree = "<group>"; };
+		23C99B3B1EE7E37D0010872F /* CMPhoto3DController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPhoto3DController.m; sourceTree = "<group>"; };
+		23C99B3D1EE7F2A40010872F /* CMCircleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCircleFlowLayout.h; sourceTree = "<group>"; };
+		23C99B3E1EE7F2A40010872F /* CMCircleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCircleFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +96,16 @@
 				23C99B231EE7DA250010872F /* CMWaterFallController.m */,
 				23C99B371EE7E0060010872F /* CMEmotionPagesController.h */,
 				23C99B381EE7E0060010872F /* CMEmotionPagesController.m */,
+				23C99B3A1EE7E37D0010872F /* CMPhoto3DController.h */,
+				23C99B3B1EE7E37D0010872F /* CMPhoto3DController.m */,
 				23C99B241EE7DA250010872F /* CMWaterFallLayout.h */,
 				23C99B251EE7DA250010872F /* CMWaterFallLayout.m */,
 				23C99B1A1EE7DA250010872F /* CMEmotionsPageFlowLayout.h */,
 				23C99B1B1EE7DA250010872F /* CMEmotionsPageFlowLayout.m */,
 				23C99B1E1EE7DA250010872F /* CMPhoto3DFlowLayout.h */,
 				23C99B1F1EE7DA250010872F /* CMPhoto3DFlowLayout.m */,
+				23C99B3D1EE7F2A40010872F /* CMCircleFlowLayout.h */,
+				23C99B3E1EE7F2A40010872F /* CMCircleFlowLayout.m */,
 				23C99B201EE7DA250010872F /* CMSphericityFlowLayout.h */,
 				23C99B211EE7DA250010872F /* CMSphericityFlowLayout.m */,
 				23C99B021EE7D9B50010872F /* AppDelegate.h */,
@@ -192,12 +202,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C99B291EE7DA250010872F /* CMMainTableController.m in Sources */,
+				23C99B3C1EE7E37D0010872F /* CMPhoto3DController.m in Sources */,
 				23C99B071EE7D9B50010872F /* ViewController.m in Sources */,
 				23C99B041EE7D9B50010872F /* AppDelegate.m in Sources */,
 				23C99B391EE7E0060010872F /* CMEmotionPagesController.m in Sources */,
 				23C99B011EE7D9B50010872F /* main.m in Sources */,
 				23C99B281EE7DA250010872F /* CMEmotionsPageFlowLayout.m in Sources */,
 				23C99B2D1EE7DA250010872F /* CMWaterFallLayout.m in Sources */,
+				23C99B3F1EE7F2A40010872F /* CMCircleFlowLayout.m in Sources */,
 				23C99B261EE7DA250010872F /* CMBaseViewController.m in Sources */,
 				23C99B2A1EE7DA250010872F /* CMPhoto3DFlowLayout.m in Sources */,
 				23C99B2C1EE7DA250010872F /* CMWaterFallController.m in Sources */,

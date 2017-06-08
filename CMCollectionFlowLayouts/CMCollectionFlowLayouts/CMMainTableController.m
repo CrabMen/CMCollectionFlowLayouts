@@ -10,6 +10,7 @@
 
 #import "CMWaterFallController.h"
 #import "CMEmotionPagesController.h"
+#import "CMPhoto3DController.h"
 @interface CMMainTableController ()
 /**数据源*/
 @property (nonatomic,strong) NSArray *dataArr;
@@ -74,7 +75,7 @@
             [self.navigationController pushViewController:[CMEmotionPagesController new] animated:YES];
             break;
         case 2:
-//            [self.navigationController pushViewController:[CMWaterFallController new] animated:YES];
+            [self.navigationController pushViewController:[CMPhoto3DController new] animated:YES];
             break;
         case 3:
 //            [self.navigationController pushViewController:[CMWaterFallController new] animated:YES];
