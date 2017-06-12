@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234F50E01EEA54D3007B8992 /* CMCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234F50DF1EEA54D3007B8992 /* CMCircleController.m */; };
 		23C99B011EE7D9B50010872F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B001EE7D9B50010872F /* main.m */; };
 		23C99B041EE7D9B50010872F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B031EE7D9B50010872F /* AppDelegate.m */; };
 		23C99B071EE7D9B50010872F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B061EE7D9B50010872F /* ViewController.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		234F50DE1EEA54D3007B8992 /* CMCircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCircleController.h; sourceTree = "<group>"; };
+		234F50DF1EEA54D3007B8992 /* CMCircleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCircleController.m; sourceTree = "<group>"; };
 		23C99AFC1EE7D9B50010872F /* CMCollectionFlowLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMCollectionFlowLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C99B001EE7D9B50010872F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23C99B021EE7D9B50010872F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				23C99B381EE7E0060010872F /* CMEmotionPagesController.m */,
 				23C99B3A1EE7E37D0010872F /* CMPhoto3DController.h */,
 				23C99B3B1EE7E37D0010872F /* CMPhoto3DController.m */,
+				234F50DE1EEA54D3007B8992 /* CMCircleController.h */,
+				234F50DF1EEA54D3007B8992 /* CMCircleController.m */,
 				23C99B241EE7DA250010872F /* CMWaterFallLayout.h */,
 				23C99B251EE7DA250010872F /* CMWaterFallLayout.m */,
 				23C99B1A1EE7DA250010872F /* CMEmotionsPageFlowLayout.h */,
@@ -161,6 +166,7 @@
 				TargetAttributes = {
 					23C99AFB1EE7D9B50010872F = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = J9ZCRKTEVV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C99B291EE7DA250010872F /* CMMainTableController.m in Sources */,
+				234F50E01EEA54D3007B8992 /* CMCircleController.m in Sources */,
 				23C99B3C1EE7E37D0010872F /* CMPhoto3DController.m in Sources */,
 				23C99B071EE7D9B50010872F /* ViewController.m in Sources */,
 				23C99B041EE7D9B50010872F /* AppDelegate.m in Sources */,
@@ -333,7 +340,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J9ZCRKTEVV;
 				INFOPLIST_FILE = CMCollectionFlowLayouts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CrabMan.CMCollectionFlowLayouts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -344,7 +353,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J9ZCRKTEVV;
 				INFOPLIST_FILE = CMCollectionFlowLayouts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CrabMan.CMCollectionFlowLayouts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +381,7 @@
 				23C99B151EE7D9B50010872F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

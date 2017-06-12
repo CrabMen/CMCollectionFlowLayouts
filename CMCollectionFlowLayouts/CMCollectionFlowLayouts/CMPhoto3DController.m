@@ -59,7 +59,7 @@
     cell.backgroundColor = randomColor;
     UIImageView *imgView = [[UIImageView alloc]initWithFrame:cell.contentView.bounds];
     
-        imgView.image = [UIImage imageNamed:@"zilong"];
+    imgView.image = [UIImage imageNamed:@"zilong"];
     
     [cell.contentView addSubview:imgView];
 
