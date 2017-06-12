@@ -185,7 +185,12 @@
 
 - (CGSize)collectionViewContentSize{
     NSInteger numberOfItem = [self.collectionView numberOfItemsInSection:0];
+    
+    
     return CGSizeMake(ItemWidth * numberOfItem, self.collectionView.bounds.size.height);
+    
+    
+    
 }
 
 
