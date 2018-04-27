@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		234F50E01EEA54D3007B8992 /* CMCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234F50DF1EEA54D3007B8992 /* CMCircleController.m */; };
 		23C99B011EE7D9B50010872F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B001EE7D9B50010872F /* main.m */; };
 		23C99B041EE7D9B50010872F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B031EE7D9B50010872F /* AppDelegate.m */; };
 		23C99B071EE7D9B50010872F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B061EE7D9B50010872F /* ViewController.m */; };
 		23C99B0A1EE7D9B50010872F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C99B081EE7D9B50010872F /* Main.storyboard */; };
 		23C99B0C1EE7D9B50010872F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C99B0B1EE7D9B50010872F /* Assets.xcassets */; };
 		23C99B0F1EE7D9B50010872F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C99B0D1EE7D9B50010872F /* LaunchScreen.storyboard */; };
-		23C99B261EE7DA250010872F /* CMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B171EE7DA250010872F /* CMBaseViewController.m */; };
-		23C99B281EE7DA250010872F /* CMEmotionsPageFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B1B1EE7DA250010872F /* CMEmotionsPageFlowLayout.m */; };
-		23C99B291EE7DA250010872F /* CMMainTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B1D1EE7DA250010872F /* CMMainTableController.m */; };
-		23C99B2A1EE7DA250010872F /* CMPhoto3DFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B1F1EE7DA250010872F /* CMPhoto3DFlowLayout.m */; };
-		23C99B2B1EE7DA250010872F /* CMSphericityFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B211EE7DA250010872F /* CMSphericityFlowLayout.m */; };
-		23C99B2C1EE7DA250010872F /* CMWaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B231EE7DA250010872F /* CMWaterFallController.m */; };
-		23C99B2D1EE7DA250010872F /* CMWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B251EE7DA250010872F /* CMWaterFallLayout.m */; };
-		23C99B391EE7E0060010872F /* CMEmotionPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B381EE7E0060010872F /* CMEmotionPagesController.m */; };
-		23C99B3C1EE7E37D0010872F /* CMPhoto3DController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B3B1EE7E37D0010872F /* CMPhoto3DController.m */; };
-		23C99B3F1EE7F2A40010872F /* CMCircleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B3E1EE7F2A40010872F /* CMCircleFlowLayout.m */; };
+		B5088E192093495600299E2B /* CMWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E012093495600299E2B /* CMWaterFallLayout.m */; };
+		B5088E1A2093495600299E2B /* CMSphericityFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E062093495600299E2B /* CMSphericityFlowLayout.m */; };
+		B5088E1B2093495600299E2B /* CMCircleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E082093495600299E2B /* CMCircleFlowLayout.m */; };
+		B5088E1C2093495600299E2B /* CMPhoto3DFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E092093495600299E2B /* CMPhoto3DFlowLayout.m */; };
+		B5088E1D2093495600299E2B /* CMEmotionsPageFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E0A2093495600299E2B /* CMEmotionsPageFlowLayout.m */; };
+		B5088E1E2093495600299E2B /* CMMainTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E0C2093495600299E2B /* CMMainTableController.m */; };
+		B5088E1F2093495600299E2B /* CMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E0D2093495600299E2B /* CMBaseViewController.m */; };
+		B5088E202093495600299E2B /* CMWaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E122093495600299E2B /* CMWaterFallController.m */; };
+		B5088E212093495600299E2B /* CMCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E152093495600299E2B /* CMCircleController.m */; };
+		B5088E222093495600299E2B /* CMPhoto3DController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E172093495600299E2B /* CMPhoto3DController.m */; };
+		B5088E232093495600299E2B /* CMEmotionPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E182093495600299E2B /* CMEmotionPagesController.m */; };
+		B5088E26209349EE00299E2B /* CMPhotoSpecialController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E25209349EE00299E2B /* CMPhotoSpecialController.m */; };
+		B5088E2920934A0F00299E2B /* CMPhotoSpecialFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E2820934A0F00299E2B /* CMPhotoSpecialFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		234F50DE1EEA54D3007B8992 /* CMCircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCircleController.h; sourceTree = "<group>"; };
-		234F50DF1EEA54D3007B8992 /* CMCircleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCircleController.m; sourceTree = "<group>"; };
 		23C99AFC1EE7D9B50010872F /* CMCollectionFlowLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMCollectionFlowLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C99B001EE7D9B50010872F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23C99B021EE7D9B50010872F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,26 +39,32 @@
 		23C99B0B1EE7D9B50010872F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C99B0E1EE7D9B50010872F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C99B101EE7D9B50010872F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23C99B161EE7DA250010872F /* CMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMBaseViewController.h; sourceTree = "<group>"; };
-		23C99B171EE7DA250010872F /* CMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBaseViewController.m; sourceTree = "<group>"; };
-		23C99B1A1EE7DA250010872F /* CMEmotionsPageFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMEmotionsPageFlowLayout.h; sourceTree = "<group>"; };
-		23C99B1B1EE7DA250010872F /* CMEmotionsPageFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMEmotionsPageFlowLayout.m; sourceTree = "<group>"; };
-		23C99B1C1EE7DA250010872F /* CMMainTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMainTableController.h; sourceTree = "<group>"; };
-		23C99B1D1EE7DA250010872F /* CMMainTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMainTableController.m; sourceTree = "<group>"; };
-		23C99B1E1EE7DA250010872F /* CMPhoto3DFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPhoto3DFlowLayout.h; sourceTree = "<group>"; };
-		23C99B1F1EE7DA250010872F /* CMPhoto3DFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPhoto3DFlowLayout.m; sourceTree = "<group>"; };
-		23C99B201EE7DA250010872F /* CMSphericityFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSphericityFlowLayout.h; sourceTree = "<group>"; };
-		23C99B211EE7DA250010872F /* CMSphericityFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSphericityFlowLayout.m; sourceTree = "<group>"; };
-		23C99B221EE7DA250010872F /* CMWaterFallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWaterFallController.h; sourceTree = "<group>"; };
-		23C99B231EE7DA250010872F /* CMWaterFallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWaterFallController.m; sourceTree = "<group>"; };
-		23C99B241EE7DA250010872F /* CMWaterFallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWaterFallLayout.h; sourceTree = "<group>"; };
-		23C99B251EE7DA250010872F /* CMWaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWaterFallLayout.m; sourceTree = "<group>"; };
-		23C99B371EE7E0060010872F /* CMEmotionPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMEmotionPagesController.h; sourceTree = "<group>"; };
-		23C99B381EE7E0060010872F /* CMEmotionPagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMEmotionPagesController.m; sourceTree = "<group>"; };
-		23C99B3A1EE7E37D0010872F /* CMPhoto3DController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPhoto3DController.h; sourceTree = "<group>"; };
-		23C99B3B1EE7E37D0010872F /* CMPhoto3DController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPhoto3DController.m; sourceTree = "<group>"; };
-		23C99B3D1EE7F2A40010872F /* CMCircleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCircleFlowLayout.h; sourceTree = "<group>"; };
-		23C99B3E1EE7F2A40010872F /* CMCircleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCircleFlowLayout.m; sourceTree = "<group>"; };
+		B5088E012093495600299E2B /* CMWaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWaterFallLayout.m; sourceTree = "<group>"; };
+		B5088E022093495600299E2B /* CMSphericityFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSphericityFlowLayout.h; sourceTree = "<group>"; };
+		B5088E032093495600299E2B /* CMCircleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCircleFlowLayout.h; sourceTree = "<group>"; };
+		B5088E042093495600299E2B /* CMEmotionsPageFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMEmotionsPageFlowLayout.h; sourceTree = "<group>"; };
+		B5088E052093495600299E2B /* CMPhoto3DFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPhoto3DFlowLayout.h; sourceTree = "<group>"; };
+		B5088E062093495600299E2B /* CMSphericityFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSphericityFlowLayout.m; sourceTree = "<group>"; };
+		B5088E072093495600299E2B /* CMWaterFallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWaterFallLayout.h; sourceTree = "<group>"; };
+		B5088E082093495600299E2B /* CMCircleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCircleFlowLayout.m; sourceTree = "<group>"; };
+		B5088E092093495600299E2B /* CMPhoto3DFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPhoto3DFlowLayout.m; sourceTree = "<group>"; };
+		B5088E0A2093495600299E2B /* CMEmotionsPageFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMEmotionsPageFlowLayout.m; sourceTree = "<group>"; };
+		B5088E0C2093495600299E2B /* CMMainTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMainTableController.m; sourceTree = "<group>"; };
+		B5088E0D2093495600299E2B /* CMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBaseViewController.m; sourceTree = "<group>"; };
+		B5088E0E2093495600299E2B /* CMMainTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMainTableController.h; sourceTree = "<group>"; };
+		B5088E0F2093495600299E2B /* CMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMBaseViewController.h; sourceTree = "<group>"; };
+		B5088E112093495600299E2B /* CMCircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCircleController.h; sourceTree = "<group>"; };
+		B5088E122093495600299E2B /* CMWaterFallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWaterFallController.m; sourceTree = "<group>"; };
+		B5088E132093495600299E2B /* CMEmotionPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMEmotionPagesController.h; sourceTree = "<group>"; };
+		B5088E142093495600299E2B /* CMPhoto3DController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPhoto3DController.h; sourceTree = "<group>"; };
+		B5088E152093495600299E2B /* CMCircleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCircleController.m; sourceTree = "<group>"; };
+		B5088E162093495600299E2B /* CMWaterFallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWaterFallController.h; sourceTree = "<group>"; };
+		B5088E172093495600299E2B /* CMPhoto3DController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPhoto3DController.m; sourceTree = "<group>"; };
+		B5088E182093495600299E2B /* CMEmotionPagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMEmotionPagesController.m; sourceTree = "<group>"; };
+		B5088E24209349EE00299E2B /* CMPhotoSpecialController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPhotoSpecialController.h; sourceTree = "<group>"; };
+		B5088E25209349EE00299E2B /* CMPhotoSpecialController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPhotoSpecialController.m; sourceTree = "<group>"; };
+		B5088E2720934A0F00299E2B /* CMPhotoSpecialFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPhotoSpecialFlowLayout.h; sourceTree = "<group>"; };
+		B5088E2820934A0F00299E2B /* CMPhotoSpecialFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPhotoSpecialFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,28 +97,9 @@
 		23C99AFE1EE7D9B50010872F /* CMCollectionFlowLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				23C99B1C1EE7DA250010872F /* CMMainTableController.h */,
-				23C99B1D1EE7DA250010872F /* CMMainTableController.m */,
-				23C99B161EE7DA250010872F /* CMBaseViewController.h */,
-				23C99B171EE7DA250010872F /* CMBaseViewController.m */,
-				23C99B221EE7DA250010872F /* CMWaterFallController.h */,
-				23C99B231EE7DA250010872F /* CMWaterFallController.m */,
-				23C99B371EE7E0060010872F /* CMEmotionPagesController.h */,
-				23C99B381EE7E0060010872F /* CMEmotionPagesController.m */,
-				23C99B3A1EE7E37D0010872F /* CMPhoto3DController.h */,
-				23C99B3B1EE7E37D0010872F /* CMPhoto3DController.m */,
-				234F50DE1EEA54D3007B8992 /* CMCircleController.h */,
-				234F50DF1EEA54D3007B8992 /* CMCircleController.m */,
-				23C99B241EE7DA250010872F /* CMWaterFallLayout.h */,
-				23C99B251EE7DA250010872F /* CMWaterFallLayout.m */,
-				23C99B1A1EE7DA250010872F /* CMEmotionsPageFlowLayout.h */,
-				23C99B1B1EE7DA250010872F /* CMEmotionsPageFlowLayout.m */,
-				23C99B1E1EE7DA250010872F /* CMPhoto3DFlowLayout.h */,
-				23C99B1F1EE7DA250010872F /* CMPhoto3DFlowLayout.m */,
-				23C99B3D1EE7F2A40010872F /* CMCircleFlowLayout.h */,
-				23C99B3E1EE7F2A40010872F /* CMCircleFlowLayout.m */,
-				23C99B201EE7DA250010872F /* CMSphericityFlowLayout.h */,
-				23C99B211EE7DA250010872F /* CMSphericityFlowLayout.m */,
+				B5088E0B2093495600299E2B /* Base */,
+				B5088E102093495600299E2B /* Controller */,
+				B5088E002093495600299E2B /* FlowLayout */,
 				23C99B021EE7D9B50010872F /* AppDelegate.h */,
 				23C99B031EE7D9B50010872F /* AppDelegate.m */,
 				23C99B051EE7D9B50010872F /* ViewController.h */,
@@ -132,6 +119,53 @@
 				23C99B001EE7D9B50010872F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5088E002093495600299E2B /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B5088E072093495600299E2B /* CMWaterFallLayout.h */,
+				B5088E012093495600299E2B /* CMWaterFallLayout.m */,
+				B5088E022093495600299E2B /* CMSphericityFlowLayout.h */,
+				B5088E062093495600299E2B /* CMSphericityFlowLayout.m */,
+				B5088E052093495600299E2B /* CMPhoto3DFlowLayout.h */,
+				B5088E092093495600299E2B /* CMPhoto3DFlowLayout.m */,
+				B5088E032093495600299E2B /* CMCircleFlowLayout.h */,
+				B5088E082093495600299E2B /* CMCircleFlowLayout.m */,
+				B5088E042093495600299E2B /* CMEmotionsPageFlowLayout.h */,
+				B5088E0A2093495600299E2B /* CMEmotionsPageFlowLayout.m */,
+				B5088E2720934A0F00299E2B /* CMPhotoSpecialFlowLayout.h */,
+				B5088E2820934A0F00299E2B /* CMPhotoSpecialFlowLayout.m */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		B5088E0B2093495600299E2B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B5088E0E2093495600299E2B /* CMMainTableController.h */,
+				B5088E0C2093495600299E2B /* CMMainTableController.m */,
+				B5088E0F2093495600299E2B /* CMBaseViewController.h */,
+				B5088E0D2093495600299E2B /* CMBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B5088E102093495600299E2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5088E142093495600299E2B /* CMPhoto3DController.h */,
+				B5088E172093495600299E2B /* CMPhoto3DController.m */,
+				B5088E112093495600299E2B /* CMCircleController.h */,
+				B5088E152093495600299E2B /* CMCircleController.m */,
+				B5088E162093495600299E2B /* CMWaterFallController.h */,
+				B5088E122093495600299E2B /* CMWaterFallController.m */,
+				B5088E132093495600299E2B /* CMEmotionPagesController.h */,
+				B5088E182093495600299E2B /* CMEmotionPagesController.m */,
+				B5088E24209349EE00299E2B /* CMPhotoSpecialController.h */,
+				B5088E25209349EE00299E2B /* CMPhotoSpecialController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +200,7 @@
 				TargetAttributes = {
 					23C99AFB1EE7D9B50010872F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = J9ZCRKTEVV;
+						DevelopmentTeam = HBW48U6989;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -207,20 +241,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C99B291EE7DA250010872F /* CMMainTableController.m in Sources */,
-				234F50E01EEA54D3007B8992 /* CMCircleController.m in Sources */,
-				23C99B3C1EE7E37D0010872F /* CMPhoto3DController.m in Sources */,
+				B5088E1A2093495600299E2B /* CMSphericityFlowLayout.m in Sources */,
+				B5088E212093495600299E2B /* CMCircleController.m in Sources */,
+				B5088E1F2093495600299E2B /* CMBaseViewController.m in Sources */,
+				B5088E1B2093495600299E2B /* CMCircleFlowLayout.m in Sources */,
+				B5088E232093495600299E2B /* CMEmotionPagesController.m in Sources */,
 				23C99B071EE7D9B50010872F /* ViewController.m in Sources */,
+				B5088E2920934A0F00299E2B /* CMPhotoSpecialFlowLayout.m in Sources */,
 				23C99B041EE7D9B50010872F /* AppDelegate.m in Sources */,
-				23C99B391EE7E0060010872F /* CMEmotionPagesController.m in Sources */,
+				B5088E192093495600299E2B /* CMWaterFallLayout.m in Sources */,
+				B5088E1E2093495600299E2B /* CMMainTableController.m in Sources */,
 				23C99B011EE7D9B50010872F /* main.m in Sources */,
-				23C99B281EE7DA250010872F /* CMEmotionsPageFlowLayout.m in Sources */,
-				23C99B2D1EE7DA250010872F /* CMWaterFallLayout.m in Sources */,
-				23C99B3F1EE7F2A40010872F /* CMCircleFlowLayout.m in Sources */,
-				23C99B261EE7DA250010872F /* CMBaseViewController.m in Sources */,
-				23C99B2A1EE7DA250010872F /* CMPhoto3DFlowLayout.m in Sources */,
-				23C99B2C1EE7DA250010872F /* CMWaterFallController.m in Sources */,
-				23C99B2B1EE7DA250010872F /* CMSphericityFlowLayout.m in Sources */,
+				B5088E202093495600299E2B /* CMWaterFallController.m in Sources */,
+				B5088E1D2093495600299E2B /* CMEmotionsPageFlowLayout.m in Sources */,
+				B5088E1C2093495600299E2B /* CMPhoto3DFlowLayout.m in Sources */,
+				B5088E222093495600299E2B /* CMPhoto3DController.m in Sources */,
+				B5088E26209349EE00299E2B /* CMPhotoSpecialController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J9ZCRKTEVV;
+				DEVELOPMENT_TEAM = HBW48U6989;
 				INFOPLIST_FILE = CMCollectionFlowLayouts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -353,7 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J9ZCRKTEVV;
+				DEVELOPMENT_TEAM = HBW48U6989;
 				INFOPLIST_FILE = CMCollectionFlowLayouts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
