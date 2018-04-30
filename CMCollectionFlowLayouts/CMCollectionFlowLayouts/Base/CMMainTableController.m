@@ -13,6 +13,7 @@
 #import "CMPhoto3DController.h"
 #import "CMCircleController.h"
 #import "CMPhotoSpecialController.h"
+#import "CMWalletController.h"
 @interface CMMainTableController ()
 /**数据源*/
 @property (nonatomic,strong) NSArray *dataArr;
@@ -24,7 +25,7 @@
 - (NSArray *)dataArr {
 
     if (!_dataArr) {
-        _dataArr = @[@"瀑布流",@"表情布局",@"3D翻页效果",@"风火轮",@"特殊图片浏览"];
+        _dataArr = @[@"瀑布流",@"表情布局",@"3D翻页效果",@"风火轮",@"特殊图片浏览",@"钱包浏览"];
     }
     return _dataArr;
 }
@@ -84,6 +85,9 @@
             break;
         case 4:
             [self.navigationController pushViewController:[CMPhotoSpecialController new] animated:YES];
+            break;
+        case 5:
+            [self.navigationController pushViewController:[CMWalletController new] animated:YES];
             break;
             
         default:

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23027754209713FA0057D7CD /* CMWalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23027753209713FA0057D7CD /* CMWalletController.m */; };
+		230277572097141D0057D7CD /* CMWalletFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 230277562097141D0057D7CD /* CMWalletFlowLayout.m */; };
 		23C99B011EE7D9B50010872F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B001EE7D9B50010872F /* main.m */; };
 		23C99B041EE7D9B50010872F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B031EE7D9B50010872F /* AppDelegate.m */; };
 		23C99B071EE7D9B50010872F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C99B061EE7D9B50010872F /* ViewController.m */; };
@@ -29,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23027752209713FA0057D7CD /* CMWalletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMWalletController.h; sourceTree = "<group>"; };
+		23027753209713FA0057D7CD /* CMWalletController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMWalletController.m; sourceTree = "<group>"; };
+		230277552097141D0057D7CD /* CMWalletFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMWalletFlowLayout.h; sourceTree = "<group>"; };
+		230277562097141D0057D7CD /* CMWalletFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMWalletFlowLayout.m; sourceTree = "<group>"; };
 		23C99AFC1EE7D9B50010872F /* CMCollectionFlowLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMCollectionFlowLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C99B001EE7D9B50010872F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23C99B021EE7D9B50010872F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 				B5088E0A2093495600299E2B /* CMEmotionsPageFlowLayout.m */,
 				B5088E2720934A0F00299E2B /* CMPhotoSpecialFlowLayout.h */,
 				B5088E2820934A0F00299E2B /* CMPhotoSpecialFlowLayout.m */,
+				230277552097141D0057D7CD /* CMWalletFlowLayout.h */,
+				230277562097141D0057D7CD /* CMWalletFlowLayout.m */,
 			);
 			path = FlowLayout;
 			sourceTree = "<group>";
@@ -164,6 +172,8 @@
 				B5088E182093495600299E2B /* CMEmotionPagesController.m */,
 				B5088E24209349EE00299E2B /* CMPhotoSpecialController.h */,
 				B5088E25209349EE00299E2B /* CMPhotoSpecialController.m */,
+				23027752209713FA0057D7CD /* CMWalletController.h */,
+				23027753209713FA0057D7CD /* CMWalletController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 				23C99B011EE7D9B50010872F /* main.m in Sources */,
 				B5088E202093495600299E2B /* CMWaterFallController.m in Sources */,
 				B5088E1D2093495600299E2B /* CMEmotionsPageFlowLayout.m in Sources */,
+				23027754209713FA0057D7CD /* CMWalletController.m in Sources */,
+				230277572097141D0057D7CD /* CMWalletFlowLayout.m in Sources */,
 				B5088E1C2093495600299E2B /* CMPhoto3DFlowLayout.m in Sources */,
 				B5088E222093495600299E2B /* CMPhoto3DController.m in Sources */,
 				B5088E26209349EE00299E2B /* CMPhotoSpecialController.m in Sources */,
