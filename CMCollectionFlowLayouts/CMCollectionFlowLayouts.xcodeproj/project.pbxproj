@@ -15,6 +15,7 @@
 		23C99B0A1EE7D9B50010872F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C99B081EE7D9B50010872F /* Main.storyboard */; };
 		23C99B0C1EE7D9B50010872F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C99B0B1EE7D9B50010872F /* Assets.xcassets */; };
 		23C99B0F1EE7D9B50010872F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C99B0D1EE7D9B50010872F /* LaunchScreen.storyboard */; };
+		B504143B2099845800077EC7 /* CMWalletCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B50414392099845800077EC7 /* CMWalletCell.m */; };
 		B5088E192093495600299E2B /* CMWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E012093495600299E2B /* CMWaterFallLayout.m */; };
 		B5088E1A2093495600299E2B /* CMSphericityFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E062093495600299E2B /* CMSphericityFlowLayout.m */; };
 		B5088E1B2093495600299E2B /* CMCircleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E082093495600299E2B /* CMCircleFlowLayout.m */; };
@@ -45,6 +46,9 @@
 		23C99B0B1EE7D9B50010872F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C99B0E1EE7D9B50010872F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C99B101EE7D9B50010872F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50414392099845800077EC7 /* CMWalletCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWalletCell.m; sourceTree = "<group>"; };
+		B504143A2099845800077EC7 /* CMWalletCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWalletCell.h; sourceTree = "<group>"; };
+		B504143C209987E200077EC7 /* CMPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPrefixHeader.pch; sourceTree = "<group>"; };
 		B5088E012093495600299E2B /* CMWaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWaterFallLayout.m; sourceTree = "<group>"; };
 		B5088E022093495600299E2B /* CMSphericityFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSphericityFlowLayout.h; sourceTree = "<group>"; };
 		B5088E032093495600299E2B /* CMCircleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCircleFlowLayout.h; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		23C99AF31EE7D9B50010872F = {
 			isa = PBXGroup;
 			children = (
+				B504143C209987E200077EC7 /* CMPrefixHeader.pch */,
 				23C99AFE1EE7D9B50010872F /* CMCollectionFlowLayouts */,
 				23C99AFD1EE7D9B50010872F /* Products */,
 			);
@@ -103,6 +108,7 @@
 		23C99AFE1EE7D9B50010872F /* CMCollectionFlowLayouts */ = {
 			isa = PBXGroup;
 			children = (
+				B50414382099845800077EC7 /* Cell */,
 				B5088E0B2093495600299E2B /* Base */,
 				B5088E102093495600299E2B /* Controller */,
 				B5088E002093495600299E2B /* FlowLayout */,
@@ -125,6 +131,15 @@
 				23C99B001EE7D9B50010872F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B50414382099845800077EC7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B504143A2099845800077EC7 /* CMWalletCell.h */,
+				B50414392099845800077EC7 /* CMWalletCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		B5088E002093495600299E2B /* FlowLayout */ = {
@@ -256,6 +271,7 @@
 				B5088E1F2093495600299E2B /* CMBaseViewController.m in Sources */,
 				B5088E1B2093495600299E2B /* CMCircleFlowLayout.m in Sources */,
 				B5088E232093495600299E2B /* CMEmotionPagesController.m in Sources */,
+				B504143B2099845800077EC7 /* CMWalletCell.m in Sources */,
 				23C99B071EE7D9B50010872F /* ViewController.m in Sources */,
 				B5088E2920934A0F00299E2B /* CMPhotoSpecialFlowLayout.m in Sources */,
 				23C99B041EE7D9B50010872F /* AppDelegate.m in Sources */,
@@ -389,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HBW48U6989;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/CMPrefixHeader.pch";
 				INFOPLIST_FILE = CMCollectionFlowLayouts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -402,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HBW48U6989;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/CMPrefixHeader.pch";
 				INFOPLIST_FILE = CMCollectionFlowLayouts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

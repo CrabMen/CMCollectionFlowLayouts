@@ -34,7 +34,7 @@
 - (void)initSubViews {
     self.dataCount = 40;
 
-
+    self.view.backgroundColor = [UIColor whiteColor];
 
 }
 @end
