@@ -64,6 +64,8 @@
     [self initSubViews];
     
     
+    
+    
 }
 
 - (void)initSubViews {
@@ -93,5 +95,7 @@
 //    self.layer.mask = layer;
     
 }
+
+
 
 @end

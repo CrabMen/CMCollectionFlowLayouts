@@ -11,6 +11,8 @@
 #import "CMWalletFlowLayout.h"
 @interface CMWalletController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
+@property (nonatomic,strong) CMWalletFlowLayout *flowLayout;
+
 @end
 
 @implementation CMWalletController
@@ -24,10 +26,10 @@
     
     [super initSubViews];
     
-    CMWalletFlowLayout *layout = [[CMWalletFlowLayout alloc]init];
+    self.flowLayout = [[CMWalletFlowLayout alloc]init];
     
     
-    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64) collectionViewLayout:layout];
+    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64) collectionViewLayout:self.flowLayout];
     self.collectionView.contentInset = UIEdgeInsetsMake(20, 10, 20, 10);
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
@@ -35,6 +37,7 @@
     self.collectionView.dataSource = self;
     
     [self.collectionView registerClass:[CMWalletCell class] forCellWithReuseIdentifier:NSStringFromClass(self.class)];
+    
     
     [self.view addSubview:self.collectionView];
     
@@ -56,8 +59,12 @@
     
 }
 
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CMWalletCell * cell  = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(self.class) forIndexPath:indexPath];
+    
+
+    
+    CMWalletCell * cell  = (CMWalletCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(self.class) forIndexPath:indexPath];
     
     
     for (UIView *subView in cell.contentView.subviews) {
@@ -65,8 +72,20 @@
     }
     cell.title = [NSString stringWithFormat:@"第%ld个Cell",(long)indexPath.row];
     
-
+    
     return cell;
+    
+    
+}
+
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    CMWalletCell *cell = (CMWalletCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.selected = !cell.selected;
+    
+    [self.flowLayout collectionView:collectionView didSelectItemAtIndexPath:indexPath];
     
     
 }
