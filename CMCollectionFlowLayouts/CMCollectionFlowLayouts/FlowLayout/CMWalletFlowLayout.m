@@ -21,7 +21,7 @@
 
 
 /**保存layoutattribute的数组*/
-@property (nonatomic,strong) NSMutableArray *layoutAttrs;
+@property (nonatomic,strong) NSArray *layoutAttrs;
 
 @property (nonatomic,strong) NSIndexPath *currentIndexPath;
 
@@ -31,13 +31,7 @@
 
 @implementation CMWalletFlowLayout
 
-- (NSMutableArray *)layoutAttrs {
-    if (!_layoutAttrs) {
-        _layoutAttrs = [NSMutableArray array];
-    }
-    
-    return _layoutAttrs;
-}
+
 
 
 - (void)prepareLayout {
@@ -53,6 +47,8 @@
 
 
 - (NSArray *)resolveCellAttributes {
+    
+    NSMutableArray *mutableArr = [NSMutableArray array];
     
     NSInteger itemCount = [self.collectionView numberOfItemsInSection:0];
     
@@ -72,31 +68,28 @@
         CGRect cellRect = CGRectMake(0, MAX(offsetY, row * CMFoldCellMinSpace), CMCollectionW - contentInset.right - contentInset.left, CMCellH);
         
         CGFloat top = shrinkCellIndex * CMExtendCellMinSpace + 20;
-        
+        CGFloat left = (4 - shrinkCellIndex) * 5;
+
         //如果点击展开后的布局
         if (self.isExtend && self.currentIndexPath.item == indexPath.item) {
             cellRect = CGRectMake(0, offsetY, CMCollectionW - contentInset.right - contentInset.left, CMCollectionH - CMExtendedCellFooter);
         } else if (self.isExtend && self.currentIndexPath.item != indexPath.item) {
             
-            
-            cellRect = CGRectMake((CMCollectionW - contentInset.right - contentInset.left)/10,offsetY + CMCollectionH - CMExtendedCellFooter + top, (CMCollectionW - contentInset.right - contentInset.left)*4/5, CMCellH);
-            
-            
-            
+            cellRect = CGRectMake(left,offsetY + CMCollectionH - CMExtendedCellFooter + top, CMCollectionW -contentInset.left - contentInset.right - left * 2, CMCellH);
             shrinkCellIndex ++;
             shrinkCellIndex = MIN(row, 3);
         }
         
         
-        
         att.frame = cellRect;
-        
         att.zIndex = row * 2;
         
-        [self.layoutAttrs addObject:att];
+        [mutableArr addObject:att];
         
     }
-    return [self.layoutAttrs copy];
+    self.layoutAttrs = [mutableArr copy];
+    
+    return self.layoutAttrs;
 }
 
 
@@ -151,12 +144,12 @@
     
     
     
+    
 }
 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 
-    
     
     if (self.isExtend) {
      
@@ -166,33 +159,7 @@
         
         self.currentIndexPath = indexPath;
         [self extendCell];
-        
-    }
-    
-//  NSArray *selectedItems = [collectionView indexPathsForSelectedItems];
-//    if (selectedItems.count == 0) {
-//        //收起
-//        self.currentIndexPath = nil;
-//        [self foldCell];
-//
-//
-//    } else {
-//
-//        self.currentIndexPath = selectedItems.firstObject;
-//
-//        //展开
-//        [self extendCell];
-//
-//        for (NSIndexPath *selectIndexPath in selectedItems) {
-//            UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:selectIndexPath];
-//
-//            if (![selectIndexPath isEqual:indexPath]) cell.selected = NO;
-//        }
-//
-//
-//    }
-    
-    
+        }
 }
 
 
