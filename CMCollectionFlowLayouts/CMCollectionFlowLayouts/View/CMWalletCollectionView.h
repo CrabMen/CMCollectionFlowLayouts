@@ -10,4 +10,10 @@
 
 @interface CMWalletCollectionView : UICollectionView
 
+@property (nonatomic ,assign) BOOL canEdit;
+
+@property (nonatomic, assign) NSTimeInterval longPressInterval;
+
+
+
 @end

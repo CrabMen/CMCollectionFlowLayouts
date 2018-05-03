@@ -12,6 +12,8 @@
 @interface CMWalletController ()
 @property (nonatomic,strong) CMWalletFlowLayout *flowLayout;
 
+@property (nonatomic,strong) CMWalletCollectionView *collectionView;
+
 @end
 
 @implementation CMWalletController
@@ -33,7 +35,8 @@
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
-   
+    
+    self.collectionView.canEdit = YES;
     
     
     [self.view addSubview:self.collectionView];
