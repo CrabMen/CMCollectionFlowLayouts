@@ -152,9 +152,7 @@
 
     
     if (self.isExtend) {
-     
         [self foldCell];
-        
     } else {
         
         self.currentIndexPath = indexPath;

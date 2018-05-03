@@ -29,6 +29,7 @@
 		B5088E232093495600299E2B /* CMEmotionPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E182093495600299E2B /* CMEmotionPagesController.m */; };
 		B5088E26209349EE00299E2B /* CMPhotoSpecialController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E25209349EE00299E2B /* CMPhotoSpecialController.m */; };
 		B5088E2920934A0F00299E2B /* CMPhotoSpecialFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E2820934A0F00299E2B /* CMPhotoSpecialFlowLayout.m */; };
+		B55EA480209B0079007DBC04 /* CMWalletCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EA47F209B0079007DBC04 /* CMWalletCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		B5088E25209349EE00299E2B /* CMPhotoSpecialController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPhotoSpecialController.m; sourceTree = "<group>"; };
 		B5088E2720934A0F00299E2B /* CMPhotoSpecialFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPhotoSpecialFlowLayout.h; sourceTree = "<group>"; };
 		B5088E2820934A0F00299E2B /* CMPhotoSpecialFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPhotoSpecialFlowLayout.m; sourceTree = "<group>"; };
+		B55EA47E209B0079007DBC04 /* CMWalletCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMWalletCollectionView.h; sourceTree = "<group>"; };
+		B55EA47F209B0079007DBC04 /* CMWalletCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMWalletCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +111,7 @@
 		23C99AFE1EE7D9B50010872F /* CMCollectionFlowLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				B50414382099845800077EC7 /* Cell */,
+				B50414382099845800077EC7 /* View */,
 				B5088E0B2093495600299E2B /* Base */,
 				B5088E102093495600299E2B /* Controller */,
 				B5088E002093495600299E2B /* FlowLayout */,
@@ -133,13 +136,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B50414382099845800077EC7 /* Cell */ = {
+		B50414382099845800077EC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B504143A2099845800077EC7 /* CMWalletCell.h */,
 				B50414392099845800077EC7 /* CMWalletCell.m */,
+				B55EA47E209B0079007DBC04 /* CMWalletCollectionView.h */,
+				B55EA47F209B0079007DBC04 /* CMWalletCollectionView.m */,
 			);
-			path = Cell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		B5088E002093495600299E2B /* FlowLayout */ = {
@@ -269,6 +274,7 @@
 				B5088E1A2093495600299E2B /* CMSphericityFlowLayout.m in Sources */,
 				B5088E212093495600299E2B /* CMCircleController.m in Sources */,
 				B5088E1F2093495600299E2B /* CMBaseViewController.m in Sources */,
+				B55EA480209B0079007DBC04 /* CMWalletCollectionView.m in Sources */,
 				B5088E1B2093495600299E2B /* CMCircleFlowLayout.m in Sources */,
 				B5088E232093495600299E2B /* CMEmotionPagesController.m in Sources */,
 				B504143B2099845800077EC7 /* CMWalletCell.m in Sources */,
