@@ -15,10 +15,34 @@
 @property (nonatomic,strong) UILabel *titleLabel;
 
 
+@property (nonatomic,strong) UILongPressGestureRecognizer *longGesture;
+
+
 @end
 
 
 @implementation CMWalletCell
+
+- (void)setLongPressInterval:(NSTimeInterval)longPressInterval {
+    
+    _longPressInterval = longPressInterval;
+    
+    self.longGesture.minimumPressDuration = _longPressInterval;
+    
+    
+}
+- (UILongPressGestureRecognizer *)longGesture {
+    
+    if (!_longGesture) {
+        _longGesture = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(handleLongPressGestureRecognizer:)];
+        
+        _longGesture.minimumPressDuration = self.longPressInterval ? self.longPressInterval : 0.50f;
+    }
+    
+    return _longGesture;
+    
+    
+}
 
 -(UILabel *)titleLabel {
     
@@ -69,6 +93,7 @@
 }
 
 - (void)initSubViews {
+    [self addGestureRecognizer:self.longGesture];
     
     [self.contentView addSubview:self.titleLabel];
     
@@ -93,6 +118,16 @@
 //    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(16, 0)];
 //    layer.path = path.CGPath;
 //    self.layer.mask = layer;
+    
+}
+
+
+- (void)handleLongPressGestureRecognizer:(UILongPressGestureRecognizer *)gesture {
+    
+   
+    if ([self.delegate respondsToSelector:@selector(collectionViewCell:handleLongPressGestureRecognizer:)]) {
+        [self.delegate collectionViewCell:self handleLongPressGestureRecognizer:gesture];
+    }
     
 }
 

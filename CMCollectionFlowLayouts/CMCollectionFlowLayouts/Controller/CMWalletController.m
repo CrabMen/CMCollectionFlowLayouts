@@ -33,7 +33,7 @@
     
     
     self.collectionView = [[CMWalletCollectionView alloc]initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64) collectionViewLayout:self.flowLayout];
-    self.collectionView.contentInset = UIEdgeInsetsMake(20, 10, 20, 10);
+    self.collectionView.contentInset = UIEdgeInsetsMake(60, 10, 20, 10);
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
     

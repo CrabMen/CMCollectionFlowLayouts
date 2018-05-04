@@ -46,7 +46,7 @@
 }
 
 
-- (NSArray *)resolveCellAttributes {
+- (NSArray *)resolveCellAttributesInRect:(CGRect)rect {
     
     NSMutableArray *mutableArr = [NSMutableArray array];
     
@@ -82,9 +82,14 @@
         
         
         att.frame = cellRect;
-        att.zIndex = row * 2;
+       // att.zIndex = row * 2;
+        att.transform3D = CATransform3DMakeTranslation(0, 0, row * 2);
         
-        [mutableArr addObject:att];
+       
+        
+        if (CGRectIntersectsRect(cellRect, rect) || CGRectContainsRect(cellRect, rect)) {
+            [mutableArr addObject:att];
+        }
         
     }
     self.layoutAttrs = [mutableArr copy];
@@ -101,7 +106,7 @@
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     
-    return [self resolveCellAttributes];
+    return [self resolveCellAttributesInRect:rect];
     
 }
 
@@ -157,7 +162,7 @@
         
         self.currentIndexPath = indexPath;
         [self extendCell];
-        }
+    }
 }
 
 
