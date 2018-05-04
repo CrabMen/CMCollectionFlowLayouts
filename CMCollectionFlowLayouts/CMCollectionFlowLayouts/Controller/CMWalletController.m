@@ -19,6 +19,8 @@
 @implementation CMWalletController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
 }
 
 

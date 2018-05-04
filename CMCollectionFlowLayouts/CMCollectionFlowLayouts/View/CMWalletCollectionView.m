@@ -185,7 +185,6 @@
 //        self.changeRatio = 0;
         
     }
-    
 }
 
 - (void)handleEditingMoveWhenGestureCanceledOrFailed:(UILongPressGestureRecognizer *)recognizer {
