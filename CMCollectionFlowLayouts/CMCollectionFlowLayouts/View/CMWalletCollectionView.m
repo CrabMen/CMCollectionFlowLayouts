@@ -189,7 +189,7 @@
         
     } else  {
         //cell之间交换 (如果delta大于（cell高度- 两个cell之间距离/2 则交换)
-        if (fabs(location.y - self.longPressStartLocation.y) > (CMCellH - CMFoldCellMinSpace)*0.5) {
+        if (fabs(location.y - self.longPressStartLocation.y) > CMFoldCellMinSpace*0.15) {
             NSInteger exchangedItem = deltaY > 0 ? item +1 : item - 1;
             
             NSIndexPath *exchangedIndexPath = [NSIndexPath indexPathForItem:exchangedItem inSection:0];
@@ -203,9 +203,13 @@
         [self moveItemAtIndexPath:[NSIndexPath indexPathForItem:item inSection:0 ] toIndexPath:exchangedIndexPath];
 
             
+            self.longPressStartLocation = location;
             
-            self.longPressLastLocation = location;
             self.activeIndexPath = exchangedIndexPath;
+            
+            self.activeCell.layer.transform = CATransform3DMakeTranslation(0, 0, self.activeIndexPath.item * 2 );
+            
+            
         }
         
         
