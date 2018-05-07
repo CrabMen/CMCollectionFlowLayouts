@@ -30,6 +30,7 @@
 		B5088E26209349EE00299E2B /* CMPhotoSpecialController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E25209349EE00299E2B /* CMPhotoSpecialController.m */; };
 		B5088E2920934A0F00299E2B /* CMPhotoSpecialFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5088E2820934A0F00299E2B /* CMPhotoSpecialFlowLayout.m */; };
 		B55EA480209B0079007DBC04 /* CMWalletCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EA47F209B0079007DBC04 /* CMWalletCollectionView.m */; };
+		B5719DE620A022A60017EEFC /* UIView+CMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B5719DE520A022A60017EEFC /* UIView+CMCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,9 @@
 		B5088E2820934A0F00299E2B /* CMPhotoSpecialFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPhotoSpecialFlowLayout.m; sourceTree = "<group>"; };
 		B55EA47E209B0079007DBC04 /* CMWalletCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMWalletCollectionView.h; sourceTree = "<group>"; };
 		B55EA47F209B0079007DBC04 /* CMWalletCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMWalletCollectionView.m; sourceTree = "<group>"; };
+		B5719DE420A022A60017EEFC /* UIView+CMCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CMCommon.h"; sourceTree = "<group>"; };
+		B5719DE520A022A60017EEFC /* UIView+CMCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CMCommon.m"; sourceTree = "<group>"; };
+		B5719DE720A028720017EEFC /* CMHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		23C99AF31EE7D9B50010872F = {
 			isa = PBXGroup;
 			children = (
+				B5719DE720A028720017EEFC /* CMHeader.h */,
 				B504143C209987E200077EC7 /* CMPrefixHeader.pch */,
 				23C99AFE1EE7D9B50010872F /* CMCollectionFlowLayouts */,
 				23C99AFD1EE7D9B50010872F /* Products */,
@@ -120,6 +125,8 @@
 				23C99B051EE7D9B50010872F /* ViewController.h */,
 				23C99B061EE7D9B50010872F /* ViewController.m */,
 				23C99B081EE7D9B50010872F /* Main.storyboard */,
+				B5719DE420A022A60017EEFC /* UIView+CMCommon.h */,
+				B5719DE520A022A60017EEFC /* UIView+CMCommon.m */,
 				23C99B0B1EE7D9B50010872F /* Assets.xcassets */,
 				23C99B0D1EE7D9B50010872F /* LaunchScreen.storyboard */,
 				23C99B101EE7D9B50010872F /* Info.plist */,
@@ -276,6 +283,7 @@
 				B5088E1F2093495600299E2B /* CMBaseViewController.m in Sources */,
 				B55EA480209B0079007DBC04 /* CMWalletCollectionView.m in Sources */,
 				B5088E1B2093495600299E2B /* CMCircleFlowLayout.m in Sources */,
+				B5719DE620A022A60017EEFC /* UIView+CMCommon.m in Sources */,
 				B5088E232093495600299E2B /* CMEmotionPagesController.m in Sources */,
 				B504143B2099845800077EC7 /* CMWalletCell.m in Sources */,
 				23C99B071EE7D9B50010872F /* ViewController.m in Sources */,

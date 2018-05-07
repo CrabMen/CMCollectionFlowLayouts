@@ -16,6 +16,6 @@
 
 #define randomColor RGBAColor(arc4random_uniform(200), arc4random_uniform(200), arc4random_uniform(200), 255)
 
-
+#import "CMHeader.h"
 
 #endif /* CMPrefixHeader_pch */

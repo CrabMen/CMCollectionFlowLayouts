@@ -26,7 +26,9 @@
 
 @property (nonatomic,assign) CGPoint centerOffset;
 
+@property (nonatomic,assign) CGPoint longPressLastLocation;
 
+@property (nonatomic,assign) CGPoint longPressStartLocation;
 
 
 @end
@@ -85,7 +87,8 @@
             break;
 
         case UIGestureRecognizerStateChanged: {
-         //   [self collectionViewCell:cell handleLongPressGestureRecognizer:gesture];
+           [self collectionViewCell:cell handleEditingMoveWhenGestureChanged
+                                   :gesture];
         }
             break;
 
@@ -154,9 +157,11 @@
     }];
     
     
+    self.longPressLastLocation = [recognizer locationInView:self];
+    self.longPressStartLocation = [recognizer locationInView:self];
 }
 
-- (void)handleEditingMoveWhenGestureChanged:(UILongPressGestureRecognizer *)recognizer {
+- (void)collectionViewCell:(CMWalletCell *)cell handleEditingMoveWhenGestureChanged:(UILongPressGestureRecognizer *)recognizer {
     
 //    CGPoint pressPoint = [recognizer locationInView:self];
 //    if (0) {
@@ -168,6 +173,47 @@
 //       [self handleExchangeOperation];
 //       // [self detectEdge];
 //    }
+    CGPoint location = [recognizer locationInView:self];
+    CGFloat deltaY = location.y - self.longPressLastLocation.y;
+    self.snapShootCell.cm_centerY += deltaY; //修改截图视图位置
+    if (deltaY == 0) return;
+    //拖动有3中情况：1.第一个cell向上交换；2.中间（交换）3.最后一个cell向下交换
+    
+    NSInteger item = self.activeIndexPath.item;
+    
+    if (item == 0 && deltaY < 0) {
+        
+        
+    } else if (item == [self numberOfItemsInSection:0] && deltaY > 0) {
+        
+        
+    } else  {
+        //cell之间交换 (如果delta大于（cell高度- 两个cell之间距离/2 则交换)
+        if (fabs(location.y - self.longPressStartLocation.y) > (CMCellH - CMFoldCellMinSpace)*0.5) {
+            NSInteger exchangedItem = deltaY > 0 ? item +1 : item - 1;
+            
+            NSIndexPath *exchangedIndexPath = [NSIndexPath indexPathForItem:exchangedItem inSection:0];
+//            [self performBatchUpdates:^{
+//
+//
+//            } completion:^(BOOL finished) {
+//
+//            }];
+            
+        [self moveItemAtIndexPath:[NSIndexPath indexPathForItem:item inSection:0 ] toIndexPath:exchangedIndexPath];
+
+            
+            
+            self.longPressLastLocation = location;
+            self.activeIndexPath = exchangedIndexPath;
+        }
+        
+        
+    }
+    
+   
+    self.longPressLastLocation = location;
+    
     
     
 }
@@ -220,6 +266,7 @@
 //        self.changeRatio = 0;
    // }
 
+    
     
     [UIView animateWithDuration:0.25 animations:^{
         
