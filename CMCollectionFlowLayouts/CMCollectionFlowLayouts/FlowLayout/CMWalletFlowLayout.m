@@ -58,6 +58,7 @@
         
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:row inSection:0];
         UICollectionViewLayoutAttributes *att = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+        //吸顶效果
         CGRect cellRect = CGRectMake(0, MAX(offsetY, row * CMFoldCellMinSpace), CMCollectionW - contentInset.right - contentInset.left, CMCellH);
         
         CGFloat top = shrinkCellIndex * CMExtendCellMinSpace + 20;

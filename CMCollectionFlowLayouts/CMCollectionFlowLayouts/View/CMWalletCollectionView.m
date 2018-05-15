@@ -31,6 +31,11 @@
 @property (nonatomic,assign) CGPoint longPressStartLocation;
 
 
+/**
+ 当前是否正在jiao'huan
+ */
+@property (nonatomic,assign) BOOL isMoving;
+
 @end
 
 @implementation CMWalletCollectionView
@@ -188,19 +193,25 @@
         
         
     } else  {
-        //cell之间交换 (如果delta大于（cell高度- 两个cell之间距离/2 则交换)
-        if (fabs(location.y - self.longPressStartLocation.y) > CMFoldCellMinSpace*0.15) {
+        
+        //cell之间交换 (如果delta小于（cell高度- 两个cell之间距离/2 则交换)
+        if ( !self.isMoving &&(fabs(location.y - self.longPressStartLocation.y) > CMFoldCellMinSpace*0.15)) {
             NSInteger exchangedItem = deltaY > 0 ? item +1 : item - 1;
             
             NSIndexPath *exchangedIndexPath = [NSIndexPath indexPathForItem:exchangedItem inSection:0];
-//            [self performBatchUpdates:^{
-//
-//
-//            } completion:^(BOOL finished) {
-//
-//            }];
+            [self performBatchUpdates:^{
+                self.isMoving = YES;
+                [self moveItemAtIndexPath:[NSIndexPath indexPathForItem:item inSection:0 ] toIndexPath:exchangedIndexPath];
+                
+                //修改snapShootCell的层级关系
+                 self.snapShootCell.layer.transform = CATransform3DMakeTranslation(0, 0, exchangedIndexPath.item * 2 + 1);
+                
+                self.activeIndexPath = exchangedIndexPath;
+                
+            } completion:^(BOOL finished) {
+
+            }];
             
-        [self moveItemAtIndexPath:[NSIndexPath indexPathForItem:item inSection:0 ] toIndexPath:exchangedIndexPath];
 
             
             self.longPressStartLocation = location;
@@ -241,6 +252,8 @@
 //
 //    }
     
+    
+    
     [UIView animateWithDuration:0.25 animations:^{
         self.snapShootCell.frame = cell.frame;
         
@@ -248,6 +261,7 @@
     } completion:^(BOOL finished) {
         [self.snapShootCell removeFromSuperview];
         cell.hidden = NO;
+        self.isMoving = NO;
     }];
 }
 
