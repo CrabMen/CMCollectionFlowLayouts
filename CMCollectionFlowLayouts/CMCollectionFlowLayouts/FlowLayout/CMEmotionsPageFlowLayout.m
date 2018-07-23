@@ -13,13 +13,6 @@
 /**数组*/
 @property (nonatomic,strong) NSMutableArray *layoutAttrs;
 
-/**行数*/
-@property (nonatomic,assign) NSInteger rowsCount;
-
-/**列数*/
-@property (nonatomic,assign) NSInteger closCount;
-
-
 
 @end
 
@@ -48,19 +41,35 @@ static NSInteger pageCount = 0;
     
     if (!self.collectionView) return;
     
-    self.rowsCount = 5;
+    CGFloat insetLeft = self.sectionInset.left;
+    CGFloat insetRight = self.sectionInset.right;
+    CGFloat insetTop = self.sectionInset.top;
+    CGFloat insetBottom = self.sectionInset.bottom;
+    CGFloat collectionH = self.collectionView.bounds.size.height;
+    CGFloat collectionW = self.collectionView.bounds.size.width;
+    //这个和滚动的方向有关
+    CGFloat interSpac =  self.minimumInteritemSpacing;//列与列之间的距离
+    CGFloat interLine = self.minimumLineSpacing;//行与行之间的距离
     
-    self.closCount = 3;
+    
+//    if (self.scrollDirection == UICollectionViewScrollDirectionHorizontal) {//横向的
+        //        interSpac = self.minimumLineSpacing;//列与列之间的距离
+        //        interLine = self.minimumInteritemSpacing;//行与行之间的距离
+        //
+        //    }else{//纵向滚动
+        //        interSpac = self.minimumInteritemSpacing;//列与列之间的距离
+        //        interLine = self.minimumLineSpacing;//行与行之间的距离
+        //    }
     
     
-    NSInteger sectionCount = [self.collectionView numberOfSections];
+    //计算累加的组有多少页
+    NSInteger pageCount = 0;
+    //获取多少组
+    NSInteger sectionCount = self.collectionView.numberOfSections;
+    CGFloat itemW = (collectionW - insetLeft - insetRight - (self.columnCount -1)*interSpac)*1.0/self.columnCount;
+    CGFloat itemH = (collectionH - insetTop - insetBottom - (self.rowsCount -1) * interLine)*1.0/self.rowsCount;
     
-    
-    CGFloat itemW  = (self.collectionView.bounds.size.width - self.sectionInset.left - self.sectionInset.right - (self.closCount - 1)* self.minimumInteritemSpacing) / self.closCount;
-    
-    CGFloat itemH  = (self.collectionView.bounds.size.height - self.sectionInset.top
-    - self.sectionInset.bottom - (self.rowsCount - 1)* self.minimumLineSpacing) / self.rowsCount;
-    
+    //循环遍历所有的item，并设置item的attribute
     for (NSInteger sectionIndex = 0; sectionIndex < sectionCount; sectionIndex++) {
         
         NSInteger itemCount = [self.collectionView numberOfItemsInSection:sectionIndex];
@@ -71,16 +80,16 @@ static NSInteger pageCount = 0;
             
             
             //求出当前cell在某个section中在第几页第几个
-            NSInteger pageIndex = itemIndex / (self.closCount * self.rowsCount);
-            NSInteger pageItemIndex = itemIndex % (self.closCount * self.rowsCount);
+            NSInteger pageIndex = itemIndex / (self.columnCount * self.rowsCount);
+            NSInteger pageItemIndex = itemIndex % (self.columnCount * self.rowsCount);
             
             //求出当前cell在在第几行第几列
-            NSInteger rowIndex = pageItemIndex / self.closCount;
-            NSInteger cloIndex = pageItemIndex % self.closCount;
+            NSInteger rowIndex = pageItemIndex / self.columnCount;
+            NSInteger colIndex = pageItemIndex % self.columnCount;
             
             //计算cell的坐标
-            CGFloat itemX = self.sectionInset.left + cloIndex * (itemW + self.minimumInteritemSpacing) + (pageIndex + pageCount) * self.collectionView.bounds.size.width;
-            CGFloat itemY = self.sectionInset.top + rowIndex* (itemH + self.minimumLineSpacing);
+            CGFloat itemX = insetLeft + colIndex * (itemW + interSpac) + (pageIndex + pageCount) * collectionW;
+            CGFloat itemY = insetTop + rowIndex* (itemH + interSpac);
             
             attribute.frame = CGRectMake(itemX, itemY, itemW, itemH);
             
@@ -88,7 +97,7 @@ static NSInteger pageCount = 0;
             
         }
         
-        pageCount += (itemCount - 1) / (self.rowsCount * self.closCount) + 1;
+        pageCount += (itemCount - 1) / (self.rowsCount * self.columnCount) + 1;
         
     }
 
