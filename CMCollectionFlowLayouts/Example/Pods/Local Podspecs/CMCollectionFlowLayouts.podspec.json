@@ -1,0 +1,22 @@
+{
+  "name": "CMCollectionFlowLayouts",
+  "version": "0.1.0",
+  "summary": "A short description of CMCollectionFlowLayouts.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/CrabMen/CMCollectionFlowLayouts",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CrabMen": "tobecrabman@163.com"
+  },
+  "source": {
+    "git": "https://github.com/CrabMen/CMCollectionFlowLayouts.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CMCollectionFlowLayouts/Classes/**/*"
+}
