@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "CMEmotionsPageFlowLayout.h"
+#import "CMPhoto3DFlowLayout.h"
+#import "CMWaterFallLayout.h"
 
 FOUNDATION_EXPORT double CMCollectionFlowLayoutsVersionNumber;
 FOUNDATION_EXPORT const unsigned char CMCollectionFlowLayoutsVersionString[];
