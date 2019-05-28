@@ -9,7 +9,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger,CMCollectionFlowLayoutsType) {
+    CMCollectionFlowLayoutsType_Waterfall,
+    CMCollectionFlowLayoutsType_Emotions,
+    CMCollectionFlowLayoutsType_3D
+};
+
+
 @interface CMCollectionFlowLayouts : NSObject
+
+
+
 
 @end
 
